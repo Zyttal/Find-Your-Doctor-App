@@ -12,11 +12,11 @@ class ButtonsRow extends StatelessWidget {
           width: 56,
           height: 56,
           decoration: BoxDecoration(
-              color: Color.fromARGB(255, 68, 133, 253),
+              color: const Color.fromARGB(255, 68, 133, 253),
               borderRadius: BorderRadius.circular(8)),
           child: Transform.scale(
             scale: 1.5,
-            child: ImageIcon(
+            child: const ImageIcon(
               NetworkImage(
                 "https://res.cloudinary.com/dbwwffypj/image/upload/v1696674250/findYourDoctorAppAssets/Icons-Comment_dciynr.png",
               ),
@@ -26,11 +26,11 @@ class ButtonsRow extends StatelessWidget {
         ),
         Container(
           decoration: BoxDecoration(
-              color: Color.fromARGB(255, 0, 204, 106),
+              color: const Color.fromARGB(255, 0, 204, 106),
               borderRadius: BorderRadius.circular(8)),
           width: 255,
           height: 56,
-          child: Center(
+          child: const Center(
               child: Text(
             "Make An Appointment",
             style: TextStyle(

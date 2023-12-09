@@ -10,7 +10,7 @@ class HomeSearch extends StatelessWidget {
       width: 327,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
-          color: Color.fromARGB(
+          color: const Color.fromARGB(
             255,
             246,
             246,
@@ -20,7 +20,7 @@ class HomeSearch extends StatelessWidget {
         padding: const EdgeInsets.only(left: 16, right: 24),
         child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-          Column(
+          const Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(

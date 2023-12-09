@@ -1,2 +1,2 @@
-export 'detailsPage.dart';
-export 'homePage.dart';
+export 'details_page.dart';
+export 'home_page.dart';

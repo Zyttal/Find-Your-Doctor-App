@@ -1,6 +1,6 @@
-import 'package:find_your_doctor_application/widgets/gridItem.dart';
-import 'package:find_your_doctor_application/widgets/homeSearch.dart';
-import 'package:find_your_doctor_application/widgets/verticalListItem.dart';
+import 'package:find_your_doctor_application/widgets/grid_item.dart';
+import 'package:find_your_doctor_application/widgets/home_search.dart';
+import 'package:find_your_doctor_application/widgets/vertical_list_item.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
       child: SafeArea(
         child: DefaultTextStyle(
           style: GoogleFonts.lato(
-              textStyle: TextStyle(fontWeight: FontWeight.w400)),
+              textStyle: const TextStyle(fontWeight: FontWeight.w400)),
           child: Scaffold(
             body: SingleChildScrollView(
               child: Padding(
@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
                               'https://res.cloudinary.com/dbwwffypj/image/upload/v1696674250/findYourDoctorAppAssets/Icons-Menu-Burger_zv4qa6.png')
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 247,
                       ),
                       Column(
@@ -38,10 +38,10 @@ class HomePage extends StatelessWidget {
                         ],
                       )
                     ]),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
-                    Row(
+                    const Row(
                       children: [
                         Column(
                           children: [
@@ -65,11 +65,11 @@ class HomePage extends StatelessWidget {
                         )
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 24,
                     ),
-                    HomeSearch(),
-                    SizedBox(
+                    const HomeSearch(),
+                    const SizedBox(
                       height: 24,
                     ),
                     Container(
@@ -78,7 +78,7 @@ class HomePage extends StatelessWidget {
                         child: GridView.count(
                           primary: false,
                           crossAxisCount: 4,
-                          children: <Widget>[
+                          children: const <Widget>[
                             GridItem(
                                 content: "Consultation",
                                 imageURL:
@@ -161,10 +161,10 @@ class HomePage extends StatelessWidget {
                                     "https://res.cloudinary.com/dbwwffypj/image/upload/v1696685012/findYourDoctorAppAssets/Ellipse_11_doqysd.png"),
                           ],
                         )),
-                    SizedBox(
+                    const SizedBox(
                       height: 24,
                     ),
-                    Row(
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.baseline,
                       textBaseline: TextBaseline.alphabetic,
@@ -183,7 +183,7 @@ class HomePage extends StatelessWidget {
                         )
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 27,
                     ),
 
@@ -198,7 +198,7 @@ class HomePage extends StatelessWidget {
                           reviewRatingNumber: 1221,
                           availability: true,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                         ),
                         VerticalListItem(
@@ -210,7 +210,7 @@ class HomePage extends StatelessWidget {
                           reviewRatingNumber: 964,
                           availability: true,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                         ),
                         VerticalListItem(
@@ -222,7 +222,7 @@ class HomePage extends StatelessWidget {
                           reviewRatingNumber: 762,
                           availability: false,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                         ),
                         VerticalListItem(
@@ -234,7 +234,7 @@ class HomePage extends StatelessWidget {
                           reviewRatingNumber: 762,
                           availability: true,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                         ),
                       ],

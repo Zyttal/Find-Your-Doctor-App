@@ -1,5 +1,5 @@
 import 'package:find_your_doctor_application/widgets/buttons.dart';
-import 'package:find_your_doctor_application/widgets/doctorDetails.dart';
+import 'package:find_your_doctor_application/widgets/doctor_details.dart';
 import 'package:flutter/material.dart';
 
 class DetailsPage extends StatelessWidget {
@@ -40,16 +40,16 @@ class DetailsPage extends StatelessWidget {
                   onTap: () {
                     Navigator.of(context).pop();
                   },
-                  child: ImageIcon(NetworkImage(
+                  child: const ImageIcon(NetworkImage(
                       "https://res.cloudinary.com/dbwwffypj/image/upload/v1696674250/findYourDoctorAppAssets/Icons-Back_1_y0ru3h.png")),
                 )),
-            Positioned(
+            const Positioned(
                 top: 56,
                 right: 30,
                 child: ImageIcon(NetworkImage(
                     "https://res.cloudinary.com/dbwwffypj/image/upload/v1696674249/findYourDoctorAppAssets/Icons-Artboard_31_1_kdzsqj.png")))
           ]),
-          SizedBox(
+          const SizedBox(
             height: 24,
           ),
           Padding(
@@ -59,26 +59,27 @@ class DetailsPage extends StatelessWidget {
               children: [
                 Text(
                   doctorName,
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
+                  style: const TextStyle(
+                      fontSize: 24, fontWeight: FontWeight.w700),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 8,
                 ),
                 Text(
                   '$doctorSpec •  $doctorResidency Hospital',
-                  style: TextStyle(color: Color.fromARGB(255, 170, 170, 170)),
+                  style: const TextStyle(
+                      color: Color.fromARGB(255, 170, 170, 170)),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
-                Container(
-                    child: Text(
-                  "${doctorName} is one of the best doctors in the ${doctorResidency} Hospital. He has saved more than 1000 patients in the past 3 years. He has also received many awards from domestic and abroad as the best doctors. He is available on a private or schedule.",
+                Text(
+                  "$doctorName is one of the best doctors in the $doctorResidency Hospital. He has saved more than 1000 patients in the past 3 years. He has also received many awards from domestic and abroad as the best doctors. He is available on a private or schedule.",
                   softWrap: true,
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 16, color: Color.fromARGB(255, 170, 170, 170)),
-                )),
-                SizedBox(
+                ),
+                const SizedBox(
                   height: 16,
                 ),
                 Center(
@@ -86,11 +87,11 @@ class DetailsPage extends StatelessWidget {
                     reviewRatingNumber: reviewRatingNumber,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 32,
                 ),
                 ButtonsRow(),
-                SizedBox(
+                const SizedBox(
                   height: 24,
                 )
               ],

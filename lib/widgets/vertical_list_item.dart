@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_star_rating_nsafe/smooth_star_rating.dart';
-import '../pages/detailsPage.dart';
+import '../pages/details_page.dart';
 
 // ignore: must_be_immutable
 class VerticalListItem extends StatelessWidget {
@@ -91,7 +91,7 @@ class VerticalListItem extends StatelessWidget {
                             width: 4,
                           ),
                           Text(
-                            '(${reviewRatingNumber})',
+                            '($reviewRatingNumber)',
                             style: const TextStyle(
                                 color: Color.fromARGB(255, 196, 196, 196),
                                 fontSize: 10),
@@ -100,7 +100,7 @@ class VerticalListItem extends StatelessWidget {
                       ),
                     ),
                     if (!availability)
-                      Container(
+                      SizedBox(
                         width: 70,
                         height: 24,
                         child: ElevatedButton(
@@ -126,7 +126,7 @@ class VerticalListItem extends StatelessWidget {
                         ),
                       )
                     else
-                      Container(
+                      SizedBox(
                         width: 70,
                         height: 24,
                         child: ElevatedButton(

@@ -13,14 +13,14 @@ import 'package:google_fonts/google_fonts.dart';
 
 // For Debugging with DevicePreview Package
 
-// void main() => runApp(
-//       DevicePreview(
-//         enabled: !kReleaseMode,
-//         builder: (context) => MainApp(),
-//       ),
-//     );
+void main() => runApp(
+      DevicePreview(
+        enabled: !kReleaseMode,
+        builder: (context) => MainApp(),
+      ),
+    );
 
-void main() => runApp(MainApp());
+// void main() => runApp(MainApp());
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});

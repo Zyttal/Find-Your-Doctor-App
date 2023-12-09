@@ -38,12 +38,12 @@ class GridItem extends StatelessWidget {
                 ),
               ]),
             ),
-            SizedBox(
+            const SizedBox(
               height: 4,
             ),
             Text(
               content,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w400,
               ),

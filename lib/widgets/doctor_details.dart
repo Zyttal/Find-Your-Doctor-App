@@ -11,7 +11,7 @@ class DoctorDetails extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Column(
+          const Column(
             children: [
               Text(
                 "Experience",
@@ -43,33 +43,33 @@ class DoctorDetails extends StatelessWidget {
               )
             ],
           ),
-          SizedBox(
+          const SizedBox(
             width: 14,
           ),
-          VerticalDivider(),
-          SizedBox(
+          const VerticalDivider(),
+          const SizedBox(
             width: 14,
           ),
           Column(
             children: [
-              Text(
+              const Text(
                 "Patient",
                 style: TextStyle(fontSize: 16),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 8,
               ),
               Row(
                 children: [
                   Text(
-                    "${reviewRatingNumber}",
-                    style: TextStyle(
+                    "$reviewRatingNumber",
+                    style: const TextStyle(
                       fontSize: 24,
                       color: Color.fromARGB(255, 43, 146, 228),
                       fontWeight: FontWeight.w400,
                     ),
                   ),
-                  Baseline(
+                  const Baseline(
                       baseline: 20,
                       baselineType: TextBaseline.alphabetic,
                       child: Text(
@@ -81,14 +81,14 @@ class DoctorDetails extends StatelessWidget {
               )
             ],
           ),
-          SizedBox(
+          const SizedBox(
             width: 14,
           ),
-          VerticalDivider(),
-          SizedBox(
+          const VerticalDivider(),
+          const SizedBox(
             width: 14,
           ),
-          Column(
+          const Column(
             children: [
               Text(
                 "Rating",
